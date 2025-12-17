@@ -1,0 +1,141 @@
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    
+    /* ÉTAPE A : On met un fond rouge. Si vous voyez du rouge, le CSS fonctionne ! */
+    background-color: red; 
+
+    /* ÉTAPE B : On tente de charger l'image par-dessus le rouge */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('Img.jpg');
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.btn-custom-hero {
+    background-color: #e6b531; 
+    color: #000000;  
+    padding: 12px 40px;        
+    font-weight: bold;         
+    border: none;              /* Pas de bordure */
+    transition: 0.3s;          
+    text-transform: uppercase; /* Tout en majuscules */
+}
+
+.btn-custom-hero:hover {
+    background-color: #f0f0f0; /
+    
+}
+
+
+.navbar-nav .nav-item a.nav-link {
+    color: #007bff ;
+    font-size: 1.2rem; /* Plus grand */
+    font-weight: bold;
+    transition: 0.3s;
+}
+.navbar-nav .nav-item a.nav-link:hover {
+    color: black;
+}
+.category-card {
+    height: 400px; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px; 
+    position: relative;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.shoe-card {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), 
+                url("chaussures.avif");
+}
+
+
+.clothing-card {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), 
+                url('vêtements.avif');
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover; /* Évite que les photos de produits soient écrasées */
+    transition: 0.5s;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05); 
+}
+
+.card {
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+#about-section h2 {
+    color: #333;
+}
+
+.about-img-container img {
+    transition: 0.4s ease;
+    border: 8px solid #f8f9fa; /* Petit cadre blanc autour de l'image */
+}
+
+.about-img-container img:hover {
+    transform: rotate(2deg) scale(1.02); /* Effet dynamique au survol */
+}
+
+
+.badge.bg-primary {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+#contact-section .form-control {
+    border: 1px solid #e0e0e0;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+#contact-section .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+#contact-section .bg-primary {
+    background-color: #007bff !important; 
+}
+
+#contact-section .btn-primary {
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+#contact-section .btn-primary:hover {
+    background-color: #000; 
+    border-color: #000;
+}
+footer a.text-secondary:hover {
+    color: #007bff;
+    padding-left: 5px; 
+    transition: 0.3s;
+}
+
+footer hr {
+    opacity: 0.2;
+}
